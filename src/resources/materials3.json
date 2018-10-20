@@ -1,0 +1,460 @@
+[{
+	"id": "0",
+	"name": "Copper Ore"
+},
+{
+	"id": "1",
+	"name": "Iron Ore"
+},
+{
+	"id": "2",
+	"name": "Silver Ore"
+},
+{
+	"id": "3",
+	"name": "Gold Ore"
+},
+{
+	"id": "4",
+	"name": "Platinum Ore"
+},
+{
+	"id": "5",
+	"name": "Molten Globules"
+},
+{
+	"id": "6",
+	"name": "Gold Nuglet"
+},
+{
+	"id": "7",
+	"name": "Mythril Ore"
+},
+{
+	"id": "8",
+	"name": "Densinium"
+},
+{
+	"id": "9",
+	"name": "Gold Bar"
+},
+{
+	"id": "10",
+	"name": "Dracolyte"
+},
+{
+	"id": "11",
+	"name": "Orichalcum"
+},
+{
+	"id": "12",
+	"name": "Crimsonite"
+},
+{
+	"id": "13",
+	"name": "Flintstone"
+},
+{
+	"id": "14",
+	"name": "Warmaline"
+},
+{
+	"id": "15",
+	"name": "Lava Lump"
+},
+{
+	"id": "16",
+	"name": "Kitty Litter"
+},
+{
+	"id": "17",
+	"name": "Glass Frit"
+},
+{
+	"id": "18",
+	"name": "Mirrorstone"
+},
+{
+	"id": "19",
+	"name": "Brighten Rock"
+},
+{
+	"id": "20",
+	"name": "Dieamend"
+},
+{
+	"id": "21",
+	"name": "Lucida Shard"
+},
+{
+	"id": "22",
+	"name": "Enchanted Stone"
+},
+{
+	"id": "23",
+	"name": "Ethereal Stone"
+},
+{
+	"id": "24",
+	"name": "Fire Ball"
+},
+{
+	"id": "25",
+	"name": "Agate of Evolution"
+},
+{
+	"id": "26",
+	"name": "Über Agate of Evolution"
+},
+{
+	"id": "27",
+	"name": "Red Eye"
+},
+{
+	"id": "28",
+	"name": "Blue Eye"
+},
+{
+	"id": "29",
+	"name": "Yellow Eye"
+},
+{
+	"id": "30",
+	"name": "Green Eye"
+},
+{
+	"id": "31",
+	"name": "Purple Eye"
+},
+{
+	"id": "32",
+	"name": "Pink Pearl"
+},
+{
+	"id": "33",
+	"name": "Pitch Pearl"
+},
+{
+	"id": "34",
+	"name": "Pale Pearl"
+},
+{
+	"id": "35",
+	"name": "Royal Ruby"
+},
+{
+	"id": "36",
+	"name": "Savvy Sapphire"
+},
+{
+	"id": "37",
+	"name": "Sunny Citrine"
+},
+{
+	"id": "38",
+	"name": "Equable Emerald"
+},
+{
+	"id": "39",
+	"name": "Artful Amethyst"
+},
+{
+	"id": "40",
+	"name": "Chronocrystal"
+},
+{
+	"id": "41",
+	"name": "Black Tear"
+},
+{
+	"id": "42",
+	"name": "Spectralite"
+},
+{
+	"id": "43",
+	"name": "Pink Pine"
+},
+{
+	"id": "44",
+	"name": "Witherwood"
+},
+{
+	"id": "45",
+	"name": "Avabranche"
+},
+{
+	"id": "46",
+	"name": "Spellbound Bough"
+},
+{
+	"id": "47",
+	"name": "Fatalistick"
+},
+{
+	"id": "48",
+	"name": "Fire Wood"
+},
+{
+	"id": "49",
+	"name": "Wyrmwood"
+},
+{
+	"id": "50",
+	"name": "Cumulonimbough"
+},
+{
+	"id": "51",
+	"name": "Red Wood"
+},
+{
+	"id": "52",
+	"name": "Night Stick"
+},
+{
+	"id": "53",
+	"name": "Cottontop"
+},
+{
+	"id": "54",
+	"name": "Faerie Fluff"
+},
+{
+	"id": "55",
+	"name": "Waveweed"
+},
+{
+	"id": "56",
+	"name": "Narspicious"
+},
+{
+	"id": "57",
+	"name": "Thinkincense"
+},
+{
+	"id": "58",
+	"name": "Slipweed"
+},
+{
+	"id": "59",
+	"name": "Glimmergrass"
+},
+{
+	"id": "60",
+	"name": "Silkblossom"
+},
+{
+	"id": "61",
+	"name": "Flaxen Thread"
+},
+{
+	"id": "62",
+	"name": "Celestial Skein"
+},
+{
+	"id": "63",
+	"name": "Evencloth"
+},
+{
+	"id": "64",
+	"name": "Colorful Cocoon"
+},
+{
+	"id": "65",
+	"name": "Technicolour Dreamcloth"
+},
+{
+	"id": "66",
+	"name": "Kaleidocloth"
+},
+{
+	"id": "67",
+	"name": "Flurry Feather"
+},
+{
+	"id": "68",
+	"name": "Buzzberries"
+},
+{
+	"id": "69",
+	"name": "Butterfly Wings"
+},
+{
+	"id": "70",
+	"name": "Cherry Blossom Petal"
+},
+{
+	"id": "71",
+	"name": "Hardy Hide"
+},
+{
+	"id": "72",
+	"name": "Fine Fur"
+},
+{
+	"id": "73",
+	"name": "Magic Beast Hide"
+},
+{
+	"id": "74",
+	"name": "Labswool"
+},
+{
+	"id": "75",
+	"name": "Dragon Hide"
+},
+{
+	"id": "76",
+	"name": "Serpent Skin"
+},
+{
+	"id": "77",
+	"name": "Small Scale"
+},
+{
+	"id": "78",
+	"name": "Large Scale"
+},
+{
+	"id": "79",
+	"name": "Beast Bone"
+},
+{
+	"id": "80",
+	"name": "Big Bone"
+},
+{
+	"id": "81",
+	"name": "Serpent Bone"
+},
+{
+	"id": "82",
+	"name": "Twisted Talons"
+},
+{
+	"id": "83",
+	"name": "Magic Beast Horn"
+},
+{
+	"id": "84",
+	"name": "Dragon Horn"
+},
+{
+	"id": "85",
+	"name": "Sun-Bleached Seashell"
+},
+{
+	"id": "86",
+	"name": "Crimson Coral"
+},
+{
+	"id": "87",
+	"name": "Maiden's Favour"
+},
+{
+	"id": "88",
+	"name": "Tiny Tortoise Shell"
+},
+{
+	"id": "89",
+	"name": "Cowpat"
+},
+{
+	"id": "90",
+	"name": "Horse Manure"
+},
+{
+	"id": "91",
+	"name": "Slimedrop"
+},
+{
+	"id": "92",
+	"name": "Goobricant"
+},
+{
+	"id": "93",
+	"name": "Slime Crown"
+},
+{
+	"id": "94",
+	"name": "Fresh Water"
+},
+{
+	"id": "95",
+	"name": "Oasis Water"
+},
+{
+	"id": "96",
+	"name": "Rippledrops"
+},
+{
+	"id": "97",
+	"name": "Finessence"
+},
+{
+	"id": "98",
+	"name": "Permasnow"
+},
+{
+	"id": "99",
+	"name": "Ice Crystal"
+},
+{
+	"id": "100",
+	"name": "Duneberry"
+},
+{
+	"id": "101",
+	"name": "Water Sedge"
+},
+{
+	"id": "102",
+	"name": "Sparkly Sap"
+},
+{
+	"id": "103",
+	"name": "Wing of Bat"
+},
+{
+	"id": "104",
+	"name": "Lamplight"
+},
+{
+	"id": "105",
+	"name": "Toad Oil"
+},
+{
+	"id": "106",
+	"name": "Belle Cap"
+},
+{
+	"id": "107",
+	"name": "Snakeskin"
+},
+{
+	"id": "108",
+	"name": "Grubby Bandage"
+},
+{
+	"id": "109",
+	"name": "Royal Soil"
+},
+{
+	"id": "110",
+	"name": "Thunderball"
+},
+{
+	"id": "111",
+	"name": "Saint's Ashes"
+},
+{
+	"id": "112",
+	"name": "Extra Mural"
+},
+{
+	"id": "113",
+	"name": "Sainted Soma"
+},
+{
+	"id": "114",
+	"name": "Serpent's Soul"
+}]

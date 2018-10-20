@@ -1,0 +1,116 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+<div class="oj-hybrid-applayout-page">
+  <div class="oj-applayout-fixed-top">
+    <!--
+     ** Oracle JET V6.0.0 hybrid mobile application header pattern.
+     ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+     ** more information on how to use this pattern.
+    -->
+    <header role="banner" class="oj-hybrid-applayout-header">
+      <oj-module config="[[headerConfig]]"></oj-module>
+    </header>
+  </div>
+  <!-- This is where your main page content will be loaded -->
+  <div class="oj-applayout-content">
+    <div role="main" class="oj-hybrid-applayout-content">
+      <div class="oj-hybrid-padding">
+        <h1>Add Items</h1>
+        <div>
+          <oj-label for="itemTxt">Name</oj-label>
+          <oj-input-text id="itemTxt" value="{{textVal}}" clear-icon="always" id="itemText" > </oj-input-text>
+          <div class="oj-flex">
+            <div class="oj-flex-item oj-sm-5">
+
+              <oj-label for="itemSelect">Category</oj-label>
+              <oj-select-one value="{{val}}" id="itemSelect" style="max-width:20em">
+                <!-- ko foreach : Object.keys(itemType()) -->
+                <oj-option value="[[$data]]"><span data-bind="text: $data, attr: {'id':$data+'Sel'}"></span></oj-option>
+                <!-- /ko -->
+              </oj-select-one>
+            </div>
+            <div class="oj-sm-1"></div>
+            <div class="oj-flex-item oj-sm-5">
+              <oj-label for="item">Type</oj-label>
+              <!-- ko if: val() === 'Weapons' -->
+              <oj-select-one value="{{weaponVal}}" id="item" style="max-width:20em">
+                <!-- ko foreach : itemType()['Weapons'] -->
+                <oj-option value="[[$data]]"><span data-bind="text: $data"></span></oj-option>
+                <!-- /ko -->
+              </oj-select-one>
+              <!-- /ko -->
+              <!-- ko if: val() === 'Armour' -->
+              <oj-select-one value="{{armourVal}}" id="item" style="max-width:20em">
+                <!-- ko foreach : itemType()['Armour'] -->
+                <oj-option value="[[$data]]"><span data-bind="text: $data"></span></oj-option>
+                <!-- /ko -->
+              </oj-select-one>
+              <!-- /ko -->
+              <!-- ko if: val() === 'Accessories' -->
+              <oj-select-one value="{{accVal}}" id="item" style="max-width:20em">
+                <!-- ko foreach : itemType()['Accessories'] -->
+                <oj-option value="[[$data]]"><span data-bind="text: $data"></span></oj-option>
+                <!-- /ko -->
+              </oj-select-one>
+              <!-- /ko -->
+            </div>
+          </div>
+          <div id='materialSection' class='oj-flex'>
+            <div class='oj-flex-item oj-sm-5'>
+              <oj-label for="search">Material</oj-label>
+              <oj-combobox-one id="search"
+                               options="[[materialsDP]]"
+                               filter-on-open="rawValue"
+                               on-oj-value-updated="[[search]]"
+                               placeholder="Search..."
+                               >
+                <a slot="end" 
+                   id="search-button" 
+                   class="demo-search-button oj-fwk-icon-magnifier oj-fwk-icon oj-clickable-icon-nocontext"
+                   style="width: 32px;" 
+                   role="button" 
+                   aria-label="search" 
+                   on-click="[[search]]"></a> 
+              </oj-combobox-one>
+            </div>
+            <div class='oj-sm-1'></div>
+            <div class='oj-flex-item oj-sm-3'>
+              <oj-label for="inputnumber-id">Quantity</oj-label>
+              <oj-input-number id="inputnumber-id"
+                               max= "[[max]]"
+                               min= "[[min]]"
+                               step= "[[step]]"  
+                               value="{{materialValue}}"></oj-input-number>
+            </div>
+            <div class="oj-sm-4"></div>
+          </div>
+          <oj-button id='btnAddItemMaterial' on-oj-action='[[addMaterial]]'>Add Material</oj-button>
+          <div  id='itemMaterialContainer' class="oj-flex" >
+            <!-- ko foreach : currMaterial() -->
+            <div class='oj-flex oj-sm-3 item-material' >
+
+              <div  class="oj-flex-item oj-sm-10" data-bind="text:$module.data.materials()[id].label + ' x ' + qty"></div>
+              <div  class="oj-flex-item oj-sm-1" data-bind='click:()=>$module.removeMaterial($data)'><b>X</b></div>
+
+            </div>
+            <!-- /ko -->
+          </div>
+
+          <oj-button id='button1' on-oj-action='[[add]]'>Add Item</oj-button>
+          <!--            <oj-button id='btnImport' on-oj-action='[[importData]]'> Import </oj-button>-->
+          <oj-button id='btnExport' on-oj-action='[[exportData]]'> Export </oj-button>
+        </div>          
+        <h1>Remove Items</h1>
+        <div id='itemContainer' class='oj-flex'>
+          <!-- ko foreach: items() -->
+          <div data-bind="attr: {'id':id}" class='item-container oj-flex-item oj-sm-5'>
+            <div data-bind='text:name'></div> 
+          </div>
+          <!-- /ko -->
+        </div>          
+      </div>
+    </div>
+  </div>
+</div>

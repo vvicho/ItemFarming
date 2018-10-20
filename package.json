@@ -1,0 +1,22 @@
+{
+  "name": "ItemFarming",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit (JET) mobile app",
+  "dependencies": {
+    "@oracle/oraclejet": "~6.0.0",
+    "coffeescript": "^2.3.2"
+  },
+  "devDependencies": {
+    "fs-extra": "0.30.0",
+    "grunt": "^1.0.1",
+    "@oracle/grunt-oraclejet": "~6.0.0",
+    "load-grunt-config": "0.19.2",
+    "@oracle/oraclejet-tooling": "~6.0.0",
+    "qunit-reporter-junit": "^1.1.1",
+    "qunit": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}
