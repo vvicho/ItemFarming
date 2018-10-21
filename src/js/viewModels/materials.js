@@ -61,7 +61,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
                 self.textVal('');
               } else
                 console.log(name + ' already exists');
-              $('#locationTxt').focus();
+              $('#materialTxt').focus();
               return true;
             };
 

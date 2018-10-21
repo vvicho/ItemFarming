@@ -445,8 +445,8 @@
 {
 	"id": "74",
 	"value": "74",
-	"name": "Labswool",
-	"label": "Labswool"
+	"name": "Lambswool",
+	"label": "Lambswool"
 },
 {
 	"id": "75",
@@ -687,4 +687,310 @@
 	"value": "114",
 	"name": "Serpent's Soul",
 	"label": "Serpent's Soul"
+},
+{
+	"id": 115,
+	"value": 115,
+	"name": "Angel Bell",
+	"label": "Angel Bell"
+},
+{
+	"id": 116,
+	"value": 116,
+	"name": "Rockbomb Shard",
+	"label": "Rockbomb Shard"
+},
+{
+	"id": 117,
+	"value": 117,
+	"name": "Pep Pip",
+	"label": "Pep Pip"
+},
+{
+	"id": 118,
+	"value": 118,
+	"name": "Stardust Sword",
+	"label": "Stardust Sword"
+},
+{
+	"id": 119,
+	"value": 119,
+	"name": "Nebula Sword",
+	"label": "Nebula Sword"
+},
+{
+	"id": 120,
+	"value": 120,
+	"name": "Supernova Sword",
+	"label": "Supernova Sword"
+},
+{
+	"id": 121,
+	"value": 121,
+	"name": "Sword of Light",
+	"label": "Sword of Light"
+},
+{
+	"id": 122,
+	"value": 122,
+	"name": "Sword of Kings",
+	"label": "Sword of Kings"
+},
+{
+	"id": 123,
+	"value": 123,
+	"name": "Wakerobin",
+	"label": "Wakerobin"
+},
+{
+	"id": 124,
+	"value": 124,
+	"name": "Coagulant",
+	"label": "Coagulant"
+},
+{
+	"id": 125,
+	"value": 125,
+	"name": "Deft Dagger",
+	"label": "Deft Dagger"
+},
+{
+	"id": 126,
+	"value": 126,
+	"name": "Darting Dagger",
+	"label": "Darting Dagger"
+},
+{
+	"id": 127,
+	"value": 127,
+	"name": "Dashing Dagger",
+	"label": "Dashing Dagger"
+},
+{
+	"id": 128,
+	"value": 128,
+	"name": "Lunaria",
+	"label": "Lunaria"
+},
+{
+	"id": 129,
+	"value": 129,
+	"name": "Meteorang",
+	"label": "Meteorang"
+},
+{
+	"id": 130,
+	"value": 130,
+	"name": "Asterang",
+	"label": "Asterang"
+},
+{
+	"id": 131,
+	"value": 131,
+	"name": "Stellarang",
+	"label": "Stellarang"
+},
+{
+	"id": 132,
+	"value": 132,
+	"name": "Rusty Sceptre",
+	"label": "Rusty Sceptre"
+},
+{
+	"id": 133,
+	"value": 133,
+	"name": "Sage's Elixir",
+	"label": "Sage's Elixir"
+},
+{
+	"id": 134,
+	"value": 134,
+	"name": "Bright Staff",
+	"label": "Bright Staff"
+},
+{
+	"id": 135,
+	"value": 135,
+	"name": "Shining Staff",
+	"label": "Shining Staff"
+},
+{
+	"id": 136,
+	"value": 136,
+	"name": "Brilliant Staff",
+	"label": "Brilliant Staff"
+},
+{
+	"id": 137,
+	"value": 137,
+	"name": "Poker",
+	"label": "Poker"
+},
+{
+	"id": 138,
+	"value": 138,
+	"name": "Straight Poker",
+	"label": "Straight Poker"
+},
+{
+	"id": 139,
+	"value": 139,
+	"name": "Stud Poker",
+	"label": "Stud Poker"
+},
+{
+	"id": 140,
+	"value": 140,
+	"name": "Gringham Whip",
+	"label": "Gringham Whip"
+},
+{
+	"id": 141,
+	"value": 141,
+	"name": "Mega Gringham Whip",
+	"label": "Mega Gringham Whip"
+},
+{
+	"id": 142,
+	"value": 142,
+	"name": "Giga Gringham Whip",
+	"label": "Giga Gringham Whip"
+},
+{
+	"id": 143,
+	"value": 143,
+	"name": "Beastmaster Claws",
+	"label": "Beastmaster Claws"
+},
+{
+	"id": 144,
+	"value": 144,
+	"name": "Dragonlord Claws",
+	"label": "Dragonlord Claws"
+},
+{
+	"id": 145,
+	"value": 145,
+	"name": "Dragovian Lord Claws",
+	"label": "Dragovian Lord Claws"
+},
+{
+	"id": 146,
+	"value": 146,
+	"name": "Bad Axe",
+	"label": "Bad Axe"
+},
+{
+	"id": 147,
+	"value": 147,
+	"name": "Maxi Axe",
+	"label": "Maxi Axe"
+},
+{
+	"id": 148,
+	"value": 148,
+	"name": "Climaxe",
+	"label": "Climaxe"
+},
+{
+	"id": 149,
+	"value": 149,
+	"name": "Trodian Bandana",
+	"label": "Trodian Bandana"
+},
+{
+	"id": 150,
+	"value": 150,
+	"name": "Pep Pop",
+	"label": "Pep Pop"
+},
+{
+	"id": 151,
+	"value": 151,
+	"name": "Love Potion",
+	"label": "Love Potion"
+},
+{
+	"id": 152,
+	"value": 152,
+	"name": "Yggdrasil Leaf",
+	"label": "Yggdrasil Leaf"
+},
+{
+	"id": 153,
+	"value": 153,
+	"name": "Trodian Togs",
+	"label": "Trodian Togs"
+},
+{
+	"id": 154,
+	"value": 154,
+	"name": "Magic Water",
+	"label": "Magic Water"
+},
+{
+	"id": 155,
+	"value": 155,
+	"name": "Antidotal Herb",
+	"label": "Antidotal Herb"
+},
+{
+	"id": 156,
+	"value": 156,
+	"name": "Moonwort Bulb",
+	"label": "Moonwort Bulb"
+},
+{
+	"id": 157,
+	"value": 157,
+	"name": "Holy Water",
+	"label": "Holy Water"
+},
+{
+	"id": 158,
+	"value": 158,
+	"name": "Superior Medicine",
+	"label": "Superior Medicine"
+},
+{
+	"id": 159,
+	"value": 159,
+	"name": "Softwort",
+	"label": "Softwort"
+},
+{
+	"id": 160,
+	"value": 160,
+	"name": "Special Antidote",
+	"label": "Special Antidote"
+},
+{
+	"id": 161,
+	"value": 161,
+	"name": "Panacea",
+	"label": "Panacea"
+},
+{
+	"id": 162,
+	"value": 162,
+	"name": "Sleeping Hibiscus",
+	"label": "Sleeping Hibiscus"
+},
+{
+	"id": 163,
+	"value": 163,
+	"name": "Mystifying Mixture",
+	"label": "Mystifying Mixture"
+},
+{
+	"id": 164,
+	"value": 164,
+	"name": "Perfect Panacea",
+	"label": "Perfect Panacea"
+},
+{
+	"id": 165,
+	"value": 165,
+	"name": "Elfin Elixir",
+	"label": "Elfin Elixir"
 }]

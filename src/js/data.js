@@ -4,15 +4,124 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
             var self = this;
             self.materials = ko.observableArray([]);
             self.materialSize = ko.observable(0);
+            self.materialsNeeded = ko.observable({});
+            self.materialNodes = ko.observable();
+
+//            self.materialNodes.subscribe((newVal) => {
+//              for (let i in newVal) {
+//                let tag = newVal[i];
+//                tag.bind("DOMSubtreeModified", function () {
+//                  alert('changed');
+//                });
+//              }
+//            });
+
+            self.selectionSet = new Set([]);
 
             self.items = ko.observableArray([]);
             self.itemSize = ko.observable(0);
+            self.itemsOrdered = ko.observable();
+            self.selectedItems = {};
+
+            self.itemsOrdered.subscribe((newVal) => {
+              let out = {};
+              let catKeys = Object.keys(newVal);
+              for (let i = 0; i < catKeys.length; i++) {
+                let category = catKeys[i];
+                let typeKeys = Object.keys(newVal[category]);
+                for (let j = 0; j < typeKeys.length; j++) {
+                  let type = typeKeys[j];
+                  if (out[type] === undefined) {
+                    out[type] = ko.observableArray([]);
+                    out[type].subscribe(() => {
+                      self.selection();
+                    });
+                  }
+                }
+              }
+              self.selectedItems = out;
+              console.log(out);
+            });
+
+            self.currentMaterials = ko.observableArray([]);
+
+            self.materials.subscribe((newVal) => {
+              let arr = [];
+              for (let i in Object.keys(newVal)) {
+                let material = newVal[i];
+                arr[material.id] = 0;
+              }
+              console.log(arr);
+
+              self.currentMaterials(arr);
+            });
+
+//            window.setTimeout(self.calcAllDiff(), 500);
+
+            self.calcDiff = function (id) {
+              let dif = self.materialsNeeded()[id] - self.currentMaterials()[id];
+              if (dif > 0)
+                return dif;
+              else
+                return 0;
+            };
+
+            self.items.subscribe((newVal) => {
+              let items = {};
+              for (let i = 0; i < newVal.length; i++) {
+                let item = newVal[i];
+                if (items[item.category] === undefined) {
+                  items[item.category] = {};
+                }
+                if (items[item.category][item.type] === undefined) {
+                  items[item.category][item.type] = [];
+                }
+                items[item.category][item.type].push(item);
+              }
+
+              self.itemsOrdered(items);
+              return items;
+            });
+
+            self.itemsNeeded = ko.observable();
+
+            self.selection = () => {
+              let keys = Object.values(self.selectedItems);
+              self.selectionSet = new Set([]);
+              for (let i = 0; i < keys.length; i++) {
+                let arr = keys[i]();
+                for (let n in arr) {
+                  self.selectionSet.add(arr[n]);
+                }
+              }
+
+              self.calculateMaterials(Array.from(self.selectionSet));
+
+            };
+
+            self.calculateMaterials = (items) => {
+              let totalMaterials = {};
+              for (let i in items) {
+                let item = items[i];
+                let materials = self.items()[item].materials;
+                for (let j in materials) {
+                  let material = materials[j];
+                  if (totalMaterials[material.id] == undefined) {
+                    totalMaterials[material.id] = 0;
+                  }
+                  totalMaterials[material.id] += material.qty;
+                }
+              }
+              self.materialsNeeded(totalMaterials);
+            };
 
             self.enemies = ko.observableArray([]);
             self.enemySize = ko.observable(0);
 
             self.locations = ko.observableArray([]);
             self.locationSize = ko.observable(0);
+
+
 
             self.initialLoad = function (obj, objSize, file, observable) {
               $.getJSON('/resources/' + file, (data) => {
@@ -22,8 +131,8 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
                 objSize(Object.keys(obj()).length);
 
               }).
-                      fail((err) => console.log(err)).
-                      always(() => console.log(obj()));
+                      fail((err) => console.log(err));
+//                      always(() => console.log(obj()));
               ;
             };
 
@@ -39,6 +148,7 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
 
             self.initialLoad(self.materials, self.materialSize, 'materials.json', null);
             self.initialLoad(self.locations, self.locationSize, 'locations.json', null);
+            self.initialLoad(self.items, self.itemSize, 'items.json', null);
 
             self.add = {
               material: (mat) => {

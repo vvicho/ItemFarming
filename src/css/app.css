@@ -34,6 +34,34 @@
   margin-bottom: 11px;
 }
 
+.oj-inputnumber .oj-button{ 
+  width: 24px;
+}
+
+.highlight{
+  background-color: paleturquoise;
+  width: 95%;
+}
+
+.dashboard-material-label{
+  font-weight: 500;
+}
+
+.dashboard-item-type{
+  padding-left: 30px;
+}
+
+.green{
+  background-color: #42d692;
+}
+
+.red{
+  background-color: tomato;
+}
+.dashboard-material-input{
+  width:95%;
+}
+
 
 .oj-applayout-content:not(.oj-complete) {
   visibility: hidden;

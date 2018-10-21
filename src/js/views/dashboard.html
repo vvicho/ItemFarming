@@ -1,13 +1,13 @@
 <!--
  Copyright (c) 2014, 2018, Oracle and/or its affiliates.
  The Universal Permissive License (UPL), Version 1.0
- -->
+-->
 <div class="oj-hybrid-applayout-page">
   <div class="oj-applayout-fixed-top">
-      <!--
-       ** Oracle JET V6.0.0 hybrid mobile application header pattern.
-       ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
-       ** more information on how to use this pattern.
+    <!--
+     ** Oracle JET V6.0.0 hybrid mobile application header pattern.
+     ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+     ** more information on how to use this pattern.
     -->
     <header role="banner" class="oj-hybrid-applayout-header">
       <oj-module config="[[headerConfig]]"></oj-module>
@@ -18,9 +18,66 @@
     <div role="main" class="oj-hybrid-applayout-content">
       <div class="oj-hybrid-padding">
         <h1>Dashboard Content Area</h1>
-        <div>
-            To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
-        </div>
+        <oj-button id="btnRefresh" on-oj-action='[[refreshItems]]'>Refresh </oj-button>
+        <oj-collapsible id="collapsiblePage" expanded>
+          <h3 id="h" slot="header">Materials Needed</h3>
+          <div  id='itemMaterialContainer' class="oj-flex" >
+            <!-- ko foreach : Object.keys(data.materialsNeeded()) -->
+            <div class='oj-flex oj-sm-3 item-material' data-bind="css:{'green':$module.data.calcDiff($data) <= 0}" >
+              <div  class="oj-flex-item oj-sm-10" data-bind="text:$module.data.materials()[$data].label + ' x ' + $module.data.calcDiff($data)"></div>
+            </div>
+            <!-- /ko -->
+          </div>
+        </oj-collapsible>
+        <oj-collapsible id="collapsiblePage" expanded>
+          <h3 id="h" slot="header">Forge Items</h3>
+          <!-- ko foreach : Object.keys(data.itemsOrdered()) -->
+          <oj-collapsible class="dashboard-item-type" data-bind="attr:{'id':$data}">
+            <h4 slot="header" data-bind="text:$data">a</h4>
+            <!-- ko foreach : Object.keys($module.data.itemsOrdered()[$data]) -->
+            <oj-collapsible class="dashboard-item-type" data-bind="attr:{'id':$data}">
+              <h4 slot="header" data-bind="text:$data"></h4>
+              <oj-checkboxset id="inlineSet"
+                              labelled-by="inlineLabelId" 
+
+                              value="{{$module.data.selectedItems[$data]}}">
+                <!-- ko foreach: $module.data.itemsOrdered()[$parent][$data]-->
+                <oj-option data-bind="attr:{'id':id, 'value':id}">
+                  <span data-bind="text:name"></span>
+                </oj-option>
+                <!-- /ko -->
+
+              </oj-checkboxset>
+            </oj-collapsible>
+            <!-- /ko -->
+          </oj-collapsible>
+          <!-- /ko -->
+          <!--          <oj-checkboxset id="inlineSet"
+                                    labelled-by="inlineLabelId" 
+                                    class='oj-choice-direction-row'
+                                    value="{{itemSelection}}">
+                      
+                      <oj-option data-bind="attr:{'id':id, 'value':id}">
+                        <span data-bind="text:name"></span>
+                      </oj-option>
+                      
+                    </oj-checkboxset>-->
+        </oj-collapsible>
+        <oj-collapsible id="collapsiblePage">
+          <h3 id="h" slot="header">My Materials</h3>
+          <div class="oj-flex">
+            <!-- ko foreach: data.materials -->
+            <div class="oj-sm-3">
+              <oj-label class="dashboard-material-label" data-bind="attr:{'for':name}, css:{'highlight':$module.data.materialsNeeded()[id]!== undefined}"><span data-bind="text:name"></span></oj-label>
+              <oj-input-number class="dashboard-material-input" data-bind="attr:{'id':id}"
+                               max= "[[$module.max]]"
+                               min= "[[$module.min]]"
+                               step= "[[$module.step]]"  
+                               value="{{$module.data.currentMaterials()[id]}}"></oj-input-number>
+            </div>
+            <!-- /ko -->
+          </div>
+        </oj-collapsible>
       </div>
     </div>
   </div>
