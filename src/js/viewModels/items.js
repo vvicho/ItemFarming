@@ -22,14 +22,16 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
 
             // Header Config
             self.val = ko.observable('Weapons');
-            self.weaponVal = ko.observable('Swords');
-            self.armourVal = ko.observable('Shields');
-            self.accVal = ko.observable('Eye and Earwear');
+            self.weaponVal = ko.observable('Sora');
+            self.armourVal = ko.observable('Armor');
+            self.accVal = ko.observable('Accessories');
             self.currMaterial = ko.observableArray([]);
             self.itemType = ko.observable({
-              'Weapons': ['Swords', 'Greatswords', 'Knives', 'Boomerangs', 'Wands', 'Heavy Wands', 'Spears', 'Whips', 'Claws', 'Axes'],
-              'Armour': ['Shields', 'Greatshields', 'Hats', 'Helmets', 'Clothes', 'Armour', 'Robes'],
-              'Accessories': ['Eye and Earwear', 'Neckwear', 'Wristwear', 'Gloves', 'Rings', 'Footwear', 'Other Accessories']
+              'Weapons': ['Sora', 'Donald', 'Goofy'],
+              'Armour': ['Armor'],
+              'Accessories': ['Accessories'],
+              'Items': ['Items'],
+              'Materials': ['Materials']
             });
 
             self.search = function (event) {
@@ -148,6 +150,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
               let aux = self.currMaterial();
               aux.push(mat);
               self.currMaterial(aux);
+              $('#search').focus();
               console.log(self.currMaterial());
 
             };

@@ -42,6 +42,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
               data.exportData(matArray, 'materials');
             };
 
+
 //            $(document).keyup(function (event) {
 //              var keycode = event.keyCode;
 //              console.log(keycode);
@@ -99,6 +100,15 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
               // Implement if needed
             };
           }
+
+//          $('#materialTxt\\|input').on('keyup', (event) => {
+//            var keycode = event.keyCode;
+//            console.log(keycode);
+//            if (keycode == '13') {
+//              self.add();
+//            }
+//
+//          });
 
           /*
            * Returns a constructor for the ViewModel so that the ViewModel is constructed
