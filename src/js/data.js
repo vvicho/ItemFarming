@@ -5,8 +5,7 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils',
   'ojs/ojarraytabledatasource',
   'ojs/ojoffcanvas',
   'ojs/ojbutton',
-  'ojs/ojmasonrylayout',
-  'ojs/ojswitch'],
+  'ojs/ojmasonrylayout'],
         function (oj, ko, moduleUtils) {
           function Data() {
             var self = this;
@@ -14,16 +13,6 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils',
             self.materialSize = ko.observable(0);
             self.materialsNeeded = ko.observable({});
             self.materialNodes = ko.observable();
-
-//            self.materialNodes.subscribe((newVal) => {
-//              for (let i in newVal) {
-//                let tag = newVal[i];
-//                tag.bind("DOMSubtreeModified", function () {
-//                  alert('changed');
-//                });
-//              }
-//            });
-
             self.selectionSet = new Set([]);
 
             self.items = ko.observableArray([]);
@@ -48,26 +37,30 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils',
                 }
               }
               self.selectedItems = out;
-              console.log(out);
             });
 
             self.currentMaterials = ko.observableArray([]);
+            self.currentMaterials.subscribe(_ => {
+
+            });
 
             self.materials.subscribe((newVal) => {
               let arr = [];
               for (let i in Object.keys(newVal)) {
                 let material = newVal[i];
-                arr[material.id] = 0;
+                arr[material.id] = ko.observable(0);
+                arr[material.id].subscribe(() => {
+                  console.log(self.currentMaterials()[material.id]());
+                  self.materialsNeeded.valueHasMutated();
+                });
               }
-              console.log(arr);
-
               self.currentMaterials(arr);
             });
 
 //            window.setTimeout(self.calcAllDiff(), 500);
 
             self.calcDiff = function (id) {
-              let dif = self.materialsNeeded()[id] - self.currentMaterials()[id];
+              let dif = self.materialsNeeded()[id] - self.currentMaterials()[id]();
               if (dif > 0)
                 return dif;
               else
@@ -217,12 +210,18 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils',
               return array.filter(e => e !== element);
             };
 
+            self.extend = (obj, src) => {
+              for (var key in src) {
+                if (src.hasOwnProperty(key))
+                  obj[key] = src[key];
+              }
+              return obj;
+            }
+
+
+
 
           }
-
-
-
-
 
           return new Data();
         }

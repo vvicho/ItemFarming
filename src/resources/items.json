@@ -582,8 +582,7 @@
 },
 {
 	"name": "Buster Band",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 2
@@ -604,8 +603,7 @@
 },
 {
 	"name": "Buster Band+",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 2
@@ -630,8 +628,7 @@
 },
 {
 	"name": "Fire Bangle",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 32,
 		"qty": 3
@@ -648,8 +645,7 @@
 },
 {
 	"name": "Fira Bangle",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 3
@@ -670,8 +666,7 @@
 },
 {
 	"name": "Firaga Bangle",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -688,8 +683,7 @@
 },
 {
 	"name": "Firaza Bangle",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 3
@@ -710,8 +704,7 @@
 },
 {
 	"name": "Fire Chain",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -732,8 +725,7 @@
 },
 {
 	"name": "Blizzard Choker",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 32,
 		"qty": 3
@@ -750,8 +742,7 @@
 },
 {
 	"name": "Blizzara Choker",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 3
@@ -772,8 +763,7 @@
 },
 {
 	"name": "Blizzaga Choker",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -790,8 +780,7 @@
 },
 {
 	"name": "Blizzaza Choker",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 3
@@ -812,8 +801,7 @@
 },
 {
 	"name": "Blizzard Chain",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -834,8 +822,7 @@
 },
 {
 	"name": "Thunder Trinket",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 32,
 		"qty": 3
@@ -852,8 +839,7 @@
 },
 {
 	"name": "Thundara Trinket",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 3
@@ -874,8 +860,7 @@
 },
 {
 	"name": "Thundaga Trinket",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -892,8 +877,7 @@
 },
 {
 	"name": "Thundaza Trinket",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 3
@@ -914,8 +898,7 @@
 },
 {
 	"name": "Thunder Chain",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -936,8 +919,7 @@
 },
 {
 	"name": "Shadow Anklet",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 32,
 		"qty": 3
@@ -954,8 +936,7 @@
 },
 {
 	"name": "Dark Anklet",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 3
@@ -976,8 +957,7 @@
 },
 {
 	"name": "Midnight Anklet",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -994,8 +974,7 @@
 },
 {
 	"name": "Chaos Anklet",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 3
@@ -1016,8 +995,7 @@
 },
 {
 	"name": "Dark Chain",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -1038,8 +1016,7 @@
 },
 {
 	"name": "Elven Bandanna",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 32,
 		"qty": 3
@@ -1056,8 +1033,7 @@
 },
 {
 	"name": "Divine Bandanna",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -1074,8 +1050,7 @@
 },
 {
 	"name": "Aqua Chaplet",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -1096,8 +1071,7 @@
 },
 {
 	"name": "Wind Fan",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 32,
 		"qty": 3
@@ -1114,8 +1088,7 @@
 },
 {
 	"name": "Storm Fan",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -1132,8 +1105,7 @@
 },
 {
 	"name": "Aero Armlet",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -1154,8 +1126,7 @@
 },
 {
 	"name": "Acrisius",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 3
@@ -1176,8 +1147,7 @@
 },
 {
 	"name": "Acrisius+",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 35,
 		"qty": 3
@@ -1202,8 +1172,7 @@
 },
 {
 	"name": "Cosmic Chain",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -1228,8 +1197,7 @@
 },
 {
 	"name": "Petite Ribbon",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 56,
 		"qty": 2
@@ -1254,8 +1222,7 @@
 },
 {
 	"name": "Firefighter Rosette",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1272,8 +1239,7 @@
 },
 {
 	"name": "Umbrella Rosette",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1290,8 +1256,7 @@
 },
 {
 	"name": "Mask Rosette",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1308,8 +1273,7 @@
 },
 {
 	"name": "Snowman Rosette",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1326,8 +1290,7 @@
 },
 {
 	"name": "Insulator Rosette",
-	"category": "Armour",
-	"type": "Armor",
+	"category": "Armor",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1345,7 +1308,6 @@
 {
 	"name": "Ability Ring+",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 32,
 		"qty": 2
@@ -1359,7 +1321,6 @@
 {
 	"name": "Technician's Ring+",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1373,7 +1334,6 @@
 {
 	"name": "Skill Ring+",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 34,
 		"qty": 2
@@ -1387,7 +1347,6 @@
 {
 	"name": "Cosmic Ring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 35,
 		"qty": 2
@@ -1409,7 +1368,6 @@
 {
 	"name": "Phantom Ring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 35,
 		"qty": 2
@@ -1427,7 +1385,6 @@
 {
 	"name": "Orichalcum Ring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -1445,7 +1402,6 @@
 {
 	"name": "Sorcerer's Ring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 35,
 		"qty": 2
@@ -1463,7 +1419,6 @@
 {
 	"name": "Wisdom Ring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 56,
 		"qty": 1
@@ -1481,7 +1436,6 @@
 {
 	"name": "Soldier's Earring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1499,7 +1453,6 @@
 {
 	"name": "Fencer's Earring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -1517,7 +1470,6 @@
 {
 	"name": "Mage's Earring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1539,7 +1491,6 @@
 {
 	"name": "Slayer's Earring",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 34,
 		"qty": 3
@@ -1561,7 +1512,6 @@
 {
 	"name": "Moon Amulet",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 33,
 		"qty": 2
@@ -1579,7 +1529,6 @@
 {
 	"name": "Star Charm",
 	"category": "Accessories",
-	"type": "Accessories",
 	"materials": [{
 		"id": 34,
 		"qty": 3

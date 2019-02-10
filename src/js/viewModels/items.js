@@ -23,12 +23,12 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
             // Header Config
             self.val = ko.observable('Weapons');
             self.weaponVal = ko.observable('Sora');
-            self.armourVal = ko.observable('Armor');
+            self.armorVal = ko.observable('Armor');
             self.accVal = ko.observable('Accessories');
             self.currMaterial = ko.observableArray([]);
             self.itemType = ko.observable({
               'Weapons': ['Sora', 'Donald', 'Goofy'],
-              'Armour': ['Armor'],
+              'Armor': ['Armor'],
               'Accessories': ['Accessories'],
               'Items': ['Items'],
               'Materials': ['Materials']
@@ -97,8 +97,8 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
                 case "Weapons":
                   type = self.weaponVal();
                   break;
-                case "Armour" :
-                  type = self.armourVal();
+                case "Armor" :
+                  type = self.armorVal();
                   break;
                 case "Accessories" :
                   type = self.accVal();
