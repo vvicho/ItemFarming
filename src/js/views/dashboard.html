@@ -21,16 +21,22 @@
         <oj-button id="btnRefresh" on-oj-action='[[refreshItems]]'>Refresh </oj-button>
         <oj-collapsible id="collapsiblePage" expanded>
           <h3 id="h" slot="header">Materials Needed</h3>
-          <div  id='itemMaterialContainer' class="oj-flex" >
-            <!-- ko foreach : Object.keys(data.materialsNeeded()) -->
-            <div class='oj-flex oj-sm-3 item-material' data-bind="css:{'green':$module.data.calcDiff($data) <= 0}" >
-              <div  class="oj-flex-item oj-sm-10" data-bind="text:$module.data.materials()[$data].label + ' x ' + $module.data.calcDiff($data)"></div>
-            </div>
-            <!-- /ko -->
+          <div class="oj-flex">
+            <oj-masonry-layout id="masonryLayout">
+              <!--ko foreach : Object.keys(data.materialsNeeded())--> 
+              <div class='oj-panel oj-masonrylayout-tile-1x1' data-bind="css:{'green':$module.data.calcDiff($data) <= 0}" >
+                <div id="panel-container" class="oj-flex  oj-sm-flex-direction-column oj-sm-justify-content-center">
+                  <div  data-bind="text:$module.data.materials()[$data].label"></div>
+                  <div data-bind="text: 'x ' + $module.data.calcDiff($data)"></div>
+                </div>
+              </div>
+              <!--/ko--> 
+            </oj-masonry-layout>
           </div>
         </oj-collapsible>
         <oj-collapsible id="collapsiblePage" expanded>
           <h3 id="h" slot="header">Forge Items</h3>
+
           <!-- ko foreach : Object.keys(data.itemsOrdered()) -->
           <oj-collapsible class="dashboard-item-type" data-bind="attr:{'id':$data}">
             <h4 slot="header" data-bind="text:$data">a</h4>
@@ -57,7 +63,7 @@
                                     class='oj-choice-direction-row'
                                     value="{{itemSelection}}">
                       
-                      <oj-option data-bind="attr:{'id':id, 'value':id}">
+                      <oj-option data-bind="attr:                      {'id':id, 'value':id}">
                         <span data-bind="text:name"></span>
                       </oj-option>
                       
@@ -67,7 +73,7 @@
           <h3 id="h" slot="header">My Materials</h3>
           <div class="oj-flex">
             <!-- ko foreach: data.materials -->
-            <div class="oj-sm-3">
+            <div class="oj-sm-6 oj-md-3">
               <oj-label class="dashboard-material-label" data-bind="attr:{'for':name}, css:{'highlight':$module.data.materialsNeeded()[id]!== undefined}"><span data-bind="text:name"></span></oj-label>
               <oj-input-number class="dashboard-material-input" data-bind="attr:{'id':id}"
                                max= "[[$module.max]]"

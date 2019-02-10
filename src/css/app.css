@@ -89,3 +89,20 @@
   padding-top: 40px;
   color: #979899;
 }
+
+.oj-masonrylayout-tile-1x1 {
+  text-align: center;
+  max-width: 7em;
+  max-height: 6em;
+  min-width: 7em;
+  min-height: 6em;
+  height: 6em;
+  width: 7em;
+  display: inline-block
+}
+
+#panel-container {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}

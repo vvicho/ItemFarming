@@ -7,12 +7,27 @@
  * Your dashboard ViewModel code goes here
  */
 define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-element-utils', 'data',
-  'ojs/ojcollapsible', 'ojs/ojinputnumber', 'ojs/ojbutton', 'ojs/ojcheckboxset', 'ojs/ojradioset', 'ojs/ojlabel'],
+  'ojs/ojcollapsible', 'ojs/ojinputnumber', 'ojs/ojbutton', 'ojs/ojcheckboxset', 'ojs/ojradioset', 'ojs/ojlabel',
+  'ojs/ojswitch'],
         function (oj, ko, $, app, moduleUtils, data) {
 
           function DashboardViewModel() {
             var self = this;
             self.data = data;
+
+            self.isChecked = ko.observable(false);
+
+            self.toggleSelectAll = () => {
+              self.setItems(self.isChecked());
+            }
+
+            self.setItems = value => {
+              if (value) {
+                data.selectedItems(data.items());
+              } else {
+                data.selectedItems([]);
+              }
+            }
 
             // Header Config
             self.headerConfig = ko.observable({'view': [], 'viewModel': null});

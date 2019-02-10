@@ -1,4 +1,12 @@
-define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout', 'ojs/ojmodule-element', 'ojs/ojrouter', 'ojs/ojarraytabledatasource', 'ojs/ojoffcanvas', 'ojs/ojbutton'],
+define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils',
+  'ojs/ojknockout',
+  'ojs/ojmodule-element',
+  'ojs/ojrouter',
+  'ojs/ojarraytabledatasource',
+  'ojs/ojoffcanvas',
+  'ojs/ojbutton',
+  'ojs/ojmasonrylayout',
+  'ojs/ojswitch'],
         function (oj, ko, moduleUtils) {
           function Data() {
             var self = this;
